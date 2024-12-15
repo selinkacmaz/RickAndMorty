@@ -9,7 +9,7 @@ const App = () => {
   const [sortField, setSortField] = useState(''); // Sıralama
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedCharacter, setSelectedCharacter] = useState(null); // Seçilen karakter
-  const [error, setError] = useState(null); // Hata mesajı
+  const [error, setError] = useState(null); 
 
   const itemsPerPage = 10; // Her sayfada gösterilecek karakter sayısı
   const totalPages = 13; // 25 sayfa alacağımız için toplamda 250 karakter olacak
@@ -115,7 +115,7 @@ const App = () => {
         ))}
       </div>
 
-      {/* Seçilen Karakter Detayları */}
+      
       {selectedCharacter && (
         <div className="character-details">
           <h2>Seçilen Karakter: {selectedCharacter.name}</h2>
